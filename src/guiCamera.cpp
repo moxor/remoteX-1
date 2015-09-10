@@ -11,7 +11,7 @@ void GuiCamera::setup(){
     cameraParameters.add(gCtoggKeepAspect.set("Keep Camera aspect ratio",false));
     cameraParameters.add(gCtoggHflip.set("Camera horizontal flip",false));
     cameraParameters.add(gCtoggVflip.set("Camera vertical flip",false));
-    cameraParameters.add(gCcolor.set("Camera color",ofColor(255,255,255), ofColor(0, 0), ofColor(255, 255)));
+    cameraParameters.add(gCcolor.set("Camera color",ofFloatColor(1,1,1), ofFloatColor(0, 0), ofFloatColor(1,1)));
     cameraParameters.add(gCtoggGreenscreen.set("Camera Greenscreen",false));
     cameraParameters.add(gCfsliderVolume.set("Camera Volume",0.0, 0.0, 1.0));
     cameraParametersSecond.add(gCtoggleSampler.set("Camera sampler playback",false));

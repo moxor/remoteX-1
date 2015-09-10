@@ -9,7 +9,7 @@ void GuiImage::setup(){
     imageParameters.add(gItoggKeepAspect.set("Keep image aspect ratio",false));
     imageParameters.add(gItoggHflip.set("Image horizontal flip",false));
     imageParameters.add(gItoggVflip.set("Image vertical flip",false));
-    imageParameters.add(gIcolor.set("Image color",ofColor(255,255,255), ofColor(0, 0), ofColor(255, 255)));
+    imageParameters.add(gIcolor.set("Image color",ofFloatColor(1,1,1), ofFloatColor(0, 0), ofFloatColor(1, 1)));
     imageParameters.add(gItoggGreenscreen.set("Image Greenscreen",false));
 }
 

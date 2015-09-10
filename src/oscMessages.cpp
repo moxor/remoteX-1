@@ -63,6 +63,13 @@ void oscMessages::setTheParameters(ofAbstractParameter &e,ofxOscMessage &m){
                m.addFloatArg(tmp.b);
                m.addFloatArg(tmp.a);
           }
+          else if(e.type() == typeid(ofParameter<ofFloatColor>).name()){
+               ofColor tmp=e.cast<ofColor>();
+               m.addFloatArg(tmp.r);
+               m.addFloatArg(tmp.g);
+               m.addFloatArg(tmp.b);
+               m.addFloatArg(tmp.a);
+          }
 }
 void oscMessages::setVideo(ofAbstractParameter &e,ofxOscMessage &m,string adress){
      string name=e.getName();

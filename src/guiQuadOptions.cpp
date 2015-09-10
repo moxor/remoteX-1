@@ -35,7 +35,7 @@ void GuiQuadOptions::setup(){
     quadOptionsEdgeBlendParameters.add(gQSliderEbEdgesBottom.set("eb bottom",0.3,0.0,0.5));
     quadOptionsGreenscreenParameters.setName("Greenscreen");
     quadOptionsGreenscreenParameters.add(gQSliderGsThreshold.set("gs threshold",10.0,0.0,255.0));
-    quadOptionsGreenscreenParameters.add(gQSliderGsColors.set("gs color",ofColor(255,255,255), ofColor(0, 0), ofColor(255, 255)));
+    quadOptionsGreenscreenParameters.add(gQSliderGsColors.set("gs color",ofFloatColor(1,1,1), ofFloatColor(0, 0), ofFloatColor(1, 1)));
     quadOptionsSurfaceParameters.setName("Quad Surface");
     quadOptionsSurfaceParameters.add(gQtoggleSuShowHide.set("Surface show/hide",false));
     quadOptionsSurfaceParameters.add(gQtoggleSuTimeline.set("use Timeline",false));

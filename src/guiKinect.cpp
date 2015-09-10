@@ -12,7 +12,7 @@ void GuiKinect::setup(){
     kinectParameters.add(gKtoggKeepAspect.set("Keep Kinect  aspect ratio",false));
     kinectParameters.add(gKtoggHflip.set("Kinect  horizontal flip",false));
     kinectParameters.add(gKtoggVflip.set("Kinect  vertical flip",false));
-    kinectParameters.add(gKcolor.set("Kinect  color",ofColor(255,255,255), ofColor(0, 0), ofColor(255, 255)));
+    kinectParameters.add(gKcolor.set("Kinect  color",ofFloatColor(1,1,1), ofFloatColor(0, 0), ofFloatColor(1,1)));
     kinectParameters.add(gKtoggGreenscreen.set("Kinect  Greenscreen",false));
 
     kinectParametersSecond.add(gKfsliderTrshNear.set("Kinect threshold near", 255.0, 0.0, 255.0));

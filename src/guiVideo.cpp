@@ -9,7 +9,7 @@ void GuiVideo::setup(){
     videoParameters.add(gVtoggKeepAspect.set("Keep Video aspect ratio",false));
     videoParameters.add(gVtoggHflip.set("Video Horizontal flip",false));
     videoParameters.add(gVtoggVflip.set("Video Vertical flip",false));
-    videoParameters.add(gVcolor.set("Video color",ofColor(255,255,255), ofColor(0, 0), ofColor(255, 255)));
+    videoParameters.add(gVcolor.set("Video color",ofFloatColor(1,1,1), ofFloatColor(0, 0), ofFloatColor(1, 1)));
     videoParameters.add(gVfsliderSpeed.set("Video Speed", 1.0,-2.0, 4.0));
     videoParameters.add(gVtoggLoop.set("Video Loop",false));
     videoParameters.add(gVtoggGreenscreen.set("Video Greenscreen",false));

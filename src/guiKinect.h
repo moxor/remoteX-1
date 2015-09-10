@@ -21,7 +21,7 @@ public:
     ofParameter<bool> gKtoggKeepAspect;
     ofParameter<bool> gKtoggHflip;
     ofParameter<bool> gKtoggVflip;
-    ofParameter<ofColor> gKcolor;
+    ofParameter<ofFloatColor> gKcolor;
     ofParameter<bool> gKtoggGreenscreen;
     ofParameterGroup kinectParametersSecond;
     ofParameter<float>  gKfsliderTrshNear;

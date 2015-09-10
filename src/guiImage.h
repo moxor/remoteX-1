@@ -14,6 +14,6 @@ public:
     ofParameter<bool> gItoggKeepAspect;
     ofParameter<bool> gItoggHflip;
     ofParameter<bool> gItoggVflip;
-    ofParameter<ofColor> gIcolor;
+    ofParameter<ofFloatColor> gIcolor;
     ofParameter<bool> gItoggGreenscreen;
 };

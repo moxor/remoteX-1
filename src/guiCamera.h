@@ -21,7 +21,7 @@ public:
     ofParameter<bool> gCtoggKeepAspect;
     ofParameter<bool> gCtoggHflip;
     ofParameter<bool> gCtoggVflip;
-    ofParameter<ofColor> gCcolor;
+    ofParameter<ofFloatColor> gCcolor;
     ofParameter<bool> gCtoggGreenscreen;
     ofParameter<float>  gCfsliderVolume;
     ofParameterGroup cameraParametersSecond;
