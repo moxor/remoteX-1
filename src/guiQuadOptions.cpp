@@ -1,7 +1,7 @@
 #include "guiQuadOptions.h"
 
 void GuiQuadOptions::setup(){
-   
+
     quadOptionsCropParameters.setName("Crop Quad");
     quadOptionsCropParameters.add(gQSliderCrRcTop.set("rc top",0.0,0.0,1.0));
     quadOptionsCropParameters.add(gQSliderCrRcRight.set("rc right",0.0,0.0,1.0));
@@ -53,7 +53,7 @@ void GuiQuadOptions::setup(){
     quadOptionsParametersSecond.add(quadOptionsSurfaceParameters);
     quadOptionsParametersSecond.add(quadOptionsEdgeBlendParameters);
     quadOptionsParametersSecond.add(quadOptionsBlendingModesParameters);
-    quadOptionsParametersThird.add(gQtoggSCOnOff.set("solid colors onOff",false));
+    quadOptionsParametersThird.add(gQtoggSCOnOff.set("Solid colors onOff",false));
     quadOptionsParametersThird.add(gQcolorSC.set("Solid Colors",ofColor(255,255,255), ofColor(0, 0), ofColor(255, 255)));
     quadOptionsParametersThird.add(gQtoggTSOnOff.set("Trans colors onOff",false));
     quadOptionsParametersThird.add(gQcolorTS.set("Transition Colors",ofColor(255,255,255), ofColor(0, 0), ofColor(255, 255)));

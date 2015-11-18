@@ -39,7 +39,79 @@
 		<Unit filename="src/ofApp.h">
 			<Option virtualFolder="src/" />
 		</Unit>
-		<Extensions>
+		<Unit filename="src/gui3d.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/gui3d.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+         <Unit filename="src/guiCamera.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiCamera.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiImage.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiImage.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiKinect.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiKinect.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiOptions.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiOptions.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiQuadOptions.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiQuadOptions.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiQuadSelection.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiQuadSelection.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiQuadSelection.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiQuadSelection.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiSampler.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiSampler.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiSlideshow.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiSlideshow.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiVideo.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/guiVideo.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/oscMessages.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Unit filename="src/oscMessages.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+        <Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />

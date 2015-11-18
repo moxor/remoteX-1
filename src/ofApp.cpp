@@ -18,7 +18,7 @@ void ofApp::setup()
     //ofEnableSmoothing();
     ofSetCircleResolution(60);
 
-    
+
 
     video_color_r = 10; video_color_g = 10; video_color_b = 10; video_color_a = 10;
 
@@ -29,12 +29,12 @@ void ofApp::setup()
     //Options----------------------------------------------
     optionGroup.setup();
     optionParametersClass.add(optionGroup.optionParameters);
-    optionParametersClass.add(optionGroup.optionProjectParameters);    
+    optionParametersClass.add(optionGroup.optionProjectParameters);
     guiOptionPanel.setup(optionParametersClass,"",900,100);
     guiOptionPanel.setName("Options");
     ofAddListener(optionParametersClass.parameterChangedE(),this,&ofApp::guiEvent);
 
-   
+
     //Sampler --------------------------------------------------------
     samplerGroup.setup();
     samplerParametersClass.add(samplerGroup.samplerParameters);
@@ -205,13 +205,14 @@ void ofApp::setupQuadOptionsPages(){
 
     //EventListeners
     ofAddListener(quadOptionsParametersClass.parameterChangedE(),this,&ofApp::guiEventQuadOptions);
+    ofAddListener(quadOptionsParametersClassScTs.parameterChangedE(),this,&ofApp::guiEventQuadOptions);
     ofAddListener(quadOptionsParametersClassSecond.parameterChangedE(),this,&ofApp::guiEventQuadOptions);
     ofAddListener(quadOptionsParametersClassGlobalQuad.parameterChangedE(),this,&ofApp::guiEventQuadOptions);
 
 }
 void ofApp::setupInputPages(){
     ///the setups
-    
+
     videoGroup.setup();
     imageGroup.setup();
     kinectGroup.setup();
@@ -220,20 +221,20 @@ void ofApp::setupInputPages(){
     slideshowGroup.setup();
 
     //video
-    videoParametersClass.add(videoGroup.videoParameters);    
+    videoParametersClass.add(videoGroup.videoParameters);
     guiVideoPanel.setup(videoParametersClass);
     guiVideoPanel.setName("Video Input");
     videoPage.setup("Video");
     videoPage.add(&guiVideoPanel);
     //image
-    imageParametersClass.add(imageGroup.imageParameters);    
+    imageParametersClass.add(imageGroup.imageParameters);
     guiImagePanel.setup(imageParametersClass);
     guiImagePanel.setName("Image Input");
     imagePage.setup("Image");
     imagePage.add(&guiImagePanel);
     //kinect
     kinectParametersClass.add(kinectGroup.kinectParameters);
-    kinectParametersSecondClass.add(kinectGroup.kinectParametersSecond);    
+    kinectParametersSecondClass.add(kinectGroup.kinectParametersSecond);
     guiKinectPanel.setup(kinectParametersClass);
     guiKinectPanel.setName("Kinect Input");
     guiKinectPanel2.setup(kinectParametersSecondClass,"", 220);
@@ -243,7 +244,7 @@ void ofApp::setupInputPages(){
     kinectPage.add(&guiKinectPanel2);
     //Camera
     cameraParametersClass.add(cameraGroup.cameraParameters);
-    cameraParametersSecondClass.add(cameraGroup.cameraParametersSecond);    
+    cameraParametersSecondClass.add(cameraGroup.cameraParametersSecond);
     guiCameraPanel.setup(cameraParametersClass);
     guiCameraPanel.setName("Camera Input");
     //Matrix Cameras
@@ -266,7 +267,7 @@ void ofApp::setupInputPages(){
     cameraPage.add(&guiCameraPanel);
     //cameraPage.add(&guiCameraPanel2);
     //3d
-    Parameters3dClass.add(Group3d.Parameters3d);    
+    Parameters3dClass.add(Group3d.Parameters3d);
     vector<ofParameter<bool>> matrix_renderModes;
     matrix_renderModes.push_back(ofParameter<bool>("3d smooth",false));
     matrix_renderModes.push_back(ofParameter<bool>("3d wire",false));
@@ -283,7 +284,7 @@ void ofApp::setupInputPages(){
     Page3d.setup("3d");
     Page3d.add(&gui3dPanel);
     //Slideshow
-    slideshowParametersClass.add(slideshowGroup.slideshowParameters);  
+    slideshowParametersClass.add(slideshowGroup.slideshowParameters);
     guiSlideshowPanel.setup(slideshowParametersClass);
     guiSlideshowPanel.setName("Slideshow Input");
     slideshowPage.setup("Slideshow");
@@ -379,11 +380,12 @@ void ofApp::guiEventInputs(ofAbstractParameter &e){
             if(msg.sendOSC){sender.sendMessage(q);
             cout << q.getAddress() +" "+to_string(q.getArgAsInt(0))<< endl;}
         }
-    } 
+    }
 
 
 }
 void ofApp::guiEventQuad(ofAbstractParameter &e){
+<<<<<<< HEAD
     if (quadSelectionParametersClass.size()==1){
         for(unsigned int i=0;i<quadSelectionParametersClass.size();i++){
             if(quadSelectionParametersClass.getBool(i)){
@@ -402,14 +404,17 @@ void ofApp::guiEventQuad(ofAbstractParameter &e){
         cout << m.getAddress() +" " +to_string(m.getArgAsFloat(0))<< endl;
     }
     else if(e.cast<bool>()){  
+=======
+    if(e.cast<bool>()){
+>>>>>>> upstream/master
         activeQuad=atoi(e.getName().c_str());
         ofxOscMessage m;
         msg.setActiveQuad(m,activeQuad);
         sender.sendMessage(m);
         cout << m.getAddress() +" " +to_string(m.getArgAsFloat(0))<< endl;
     }
-  
-}  
+
+}
 void ofApp::exit()
 {
 //    delete gui0;
